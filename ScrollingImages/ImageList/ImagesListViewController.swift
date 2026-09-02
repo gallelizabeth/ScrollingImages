@@ -65,7 +65,8 @@ extension ImagesListViewController: UITableViewDataSource, UITableViewDelegate{
     // метод для вычисления высоты ячейки по картинке
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
         guard let image = UIImage(named: photosName[indexPath.row]) else {return 0}
-        let y = image.self.size.height
+        let x = tableView.bounds.width
+        let y = (x * image.self.size.height) / image.self.size.width
         return y
     }
     
