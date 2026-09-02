@@ -37,7 +37,7 @@ class ImagesListViewController: UIViewController {
         
         // tableView.register(ImageListCell.self, forCellReuseIdentifier: ImageListCell.reuseIdentifier)
         
-        tableView.rowHeight = 200
+        // tableView.rowHeight = 200
         tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 12, right: 0)
     }
 }
@@ -70,9 +70,9 @@ extension ImagesListViewController: UITableViewDataSource, UITableViewDelegate{
     // метод для вычисления высоты ячейки по картинке
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
         guard let image = UIImage(named: photosName[indexPath.row]) else {return 0}
-        let x = tableView.bounds.width
-        let y = (x * image.self.size.height) / image.self.size.width
-        return y
+        let imageWidht = tableView.bounds.width - 32
+        let imageHeight = (imageWidht * image.self.size.height) / image.self.size.width
+        return imageHeight + 8
     }
     
     
