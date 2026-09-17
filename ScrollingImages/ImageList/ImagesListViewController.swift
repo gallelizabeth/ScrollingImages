@@ -67,12 +67,15 @@ extension ImagesListViewController: UITableViewDataSource, UITableViewDelegate{
 
 extension ImagesListViewController {
     func configCell(for cell: ImageListCell, with indexPath: IndexPath){
+        // фото
         let photoName = photosName[indexPath.row]
         guard let image = UIImage(named: photoName) else {return}
         cell.imgLabel.image = image
         
+        // дата лейбл
         cell.dateLabel.text = dateFormatter.string(from: Date())
         
+        // лайк
         if indexPath.row % 2 == 0{
             cell.setLike(isLike: true)
         }else{cell.setLike(isLike: false)}
