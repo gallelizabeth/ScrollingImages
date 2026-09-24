@@ -126,69 +126,10 @@
                     <view key="view" contentMode="scaleToFill" id="XCz-cR-Lcd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1S-my-ZAe">
-                                <rect key="frame" x="346" y="151" width="44" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="0mP-bR-wDP"/>
-                                    <constraint firstAttribute="width" constant="44" id="GlE-YQ-cTb"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="Exit"/>
-                                <connections>
-                                    <action selector="actionExitButton:" destination="d2x-Up-ky5" eventType="touchUpInside" id="xVj-Ls-QRv"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fe8-2E-GXo">
-                                <rect key="frame" x="16" y="206" width="95" height="75.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BioLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hd-gR-ifF">
-                                        <rect key="frame" x="0.0" y="0.0" width="95" height="27.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                        <color key="textColor" name="YP White"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UsernameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohC-Rb-zQI">
-                                        <rect key="frame" x="0.0" y="35.5" width="95" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" name="YP Gray"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3E-Dy-nUF">
-                                        <rect key="frame" x="0.0" y="59.5" width="95" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" name="YP White"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UserImg" translatesAutoresizingMaskIntoConstraints="NO" id="GdV-C5-a8H">
-                                <rect key="frame" x="16" y="128" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="4cY-Sg-nWi"/>
-                                    <constraint firstAttribute="width" constant="70" id="viA-Qa-aSr"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="R2d-5S-oVw"/>
                         <color key="backgroundColor" name="YPBlack"/>
-                        <constraints>
-                            <constraint firstItem="GdV-C5-a8H" firstAttribute="top" secondItem="R2d-5S-oVw" secondAttribute="top" constant="32" id="Unt-R8-r2N"/>
-                            <constraint firstItem="R2d-5S-oVw" firstAttribute="trailing" secondItem="b1S-my-ZAe" secondAttribute="trailing" constant="24" id="Ylb-xZ-k8j"/>
-                            <constraint firstItem="fe8-2E-GXo" firstAttribute="leading" secondItem="XCz-cR-Lcd" secondAttribute="leading" constant="16" id="anM-0u-0DR"/>
-                            <constraint firstItem="fe8-2E-GXo" firstAttribute="top" secondItem="GdV-C5-a8H" secondAttribute="bottom" constant="8" id="fY0-Uh-dsR"/>
-                            <constraint firstItem="GdV-C5-a8H" firstAttribute="leading" secondItem="XCz-cR-Lcd" secondAttribute="leading" constant="16" id="knj-jW-Xzq"/>
-                            <constraint firstItem="b1S-my-ZAe" firstAttribute="top" secondItem="R2d-5S-oVw" secondAttribute="top" constant="55" id="ziu-MI-E2x"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="ProfileSectionActive" id="B97-jv-Say"/>
-                    <connections>
-                        <outlet property="bioLabel" destination="h3E-Dy-nUF" id="zuj-K2-FaU"/>
-                        <outlet property="exitButton" destination="b1S-my-ZAe" id="HmP-sG-J6n"/>
-                        <outlet property="nameLabel" destination="3Hd-gR-ifF" id="r9t-V0-aXx"/>
-                        <outlet property="profilePhotoImage" destination="GdV-C5-a8H" id="jm1-wg-O5n"/>
-                        <outlet property="usernameLabel" destination="ohC-Rb-zQI" id="S3c-U6-5VD"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yv6-IY-dj1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -266,20 +207,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="0" width="800" height="529.5"/>
+        <image name="0" width="1600" height="1059"/>
         <image name="0.jpg" width="800" height="529.5"/>
         <image name="Backward" width="24" height="24"/>
-        <image name="Exit" width="24" height="24"/>
         <image name="FavouriteNotActive" width="44" height="44"/>
         <image name="FeedSectionActive" width="30" height="30"/>
         <image name="ProfileSectionActive" width="30" height="30"/>
         <image name="ShareButton" width="50" height="50"/>
-        <image name="UserImg" width="12" height="12"/>
         <namedColor name="YP Background">
             <color red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="YP Gray">
-            <color red="0.68235294117647061" green="0.68627450980392157" blue="0.70588235294117652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="YP White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
